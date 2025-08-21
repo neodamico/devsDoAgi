@@ -17,4 +17,15 @@ No Main, crie um array de Investimento e exiba o rendimento de cada investimento
 
 
 public class Main {
+    public static void main(String[] args) {
+        Investimento[] inv = new Investimento[3];
+
+        inv[0] = new Investimento(1500);
+        inv[1] = new CDB(1500);
+        inv[2] = new Poupanca(1500);
+
+        for (Investimento x : inv){
+            System.out.println("Rendimento: R$" +x.calcularRendimento());
+        }
+    }
 }

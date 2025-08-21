@@ -8,13 +8,13 @@ Metodo calcularRendimento() que retorna sempre 0.
  */
 
 public class Investimento {
-    public double valorAplicado;
+    protected double valorAplicado;
 
-    public Investimento(double valorAplicado) {
+    protected Investimento(double valorAplicado) {
         this.valorAplicado = valorAplicado;
     }
 
-    public double calcularRendimento() {
+    protected double calcularRendimento() {
         return 0;
     }
 
@@ -22,7 +22,4 @@ public class Investimento {
         return valorAplicado;
     }
 
-    public void setValorAplicado(double valorAplicado) {
-        this.valorAplicado = valorAplicado;
-    }
 }
